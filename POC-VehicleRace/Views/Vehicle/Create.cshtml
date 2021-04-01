@@ -1,0 +1,127 @@
+﻿@model POC_VehicleRace.Models.VehicleDto
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add new vehicle on race track</h2>
+
+<div>
+    <div class="bg-info">
+        <div class="col-lg-12 bg-danger">
+            <div class="col-lg-6">
+                <b>Truck Validation</b>
+                <p>
+                    1. Tow strap on the vehicle
+                </p>
+
+                <p> 2. Not lifted more than 5 inches</p>
+
+            </div>
+
+            <div class="col-lg-6 bg-danger">
+                <b>Car Validation</b>
+                <p>1. Tow strap on the vehicle</p>
+                <p>2. Less than 85% tire wear</p>
+            </div>
+        </div>
+    </div>
+    @if (!string.IsNullOrEmpty(ViewBag.Success))
+    {
+        <p class="warning alert-success alert">
+            @ViewBag.Success
+        </p>
+    }
+</div>
+@using (Html.BeginForm("Create", "Vehicle", FormMethod.Post, new
+{
+    enctype = "multipart/form-data"
+}))
+{
+    @Html.AntiForgeryToken()
+    <div class="bg-warning">
+        @Html.ValidationMessageFor(model => model.ResponseMessage, "", new { @class = "text-danger" })
+    </div>
+    <div><br /></div>
+    <div class="form-horizontal">
+
+        <div class="col-lg-12" style="padding:10px 5px 5px 10px">
+            <div class="form-group col-lg-6">
+                @Html.LabelFor(model => model.Type, htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-8">
+                    @Html.DropDownListFor(m => m.Type,
+        new SelectList(Enum.GetValues(typeof(POC_VehicleRace.Models.VehicleTypes))),
+         new { @class = "form-control" })
+
+                    @Html.ValidationMessageFor(model => model.Type, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group col-md-6">
+                @Html.LabelFor(model => model.Name, htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-8">
+                    @Html.EditorFor(model => model.Name, new { htmlAttributes = new { @class = "form-control " } })
+                    @Html.ValidationMessageFor(model => model.Name, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+
+        </div>
+        <div class="col-lg-12" style="padding:10px 5px 5px 10px">
+            <div class="form-group col-lg-6">
+                @Html.LabelFor(model => model.Break, htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-8">
+                    @Html.CheckBoxFor(m => m.Break, new { htmlAttributes = new { @class = "form-control" } })
+
+                    @Html.ValidationMessageFor(model => model.Break, "", new { @class = "text-danger" })
+                </div>
+            </div>
+
+            <div class="form-group col-lg-6">
+                @Html.LabelFor(model => model.TowStrap, htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-8">
+                    @Html.CheckBoxFor(m => m.TowStrap, new { htmlAttributes = new { @class = "form-control" } })
+
+                    @Html.ValidationMessageFor(model => model.TowStrap, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12" style="padding:10px 5px 5px 10px">
+            <div class="form-group col-lg-6">
+                @Html.LabelFor(model => model.Lift, htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-8">
+                    @Html.TextBoxFor(m => m.Lift, null, new { type = "number", @required = "required" })
+                    @Html.ValidationMessageFor(model => model.Lift, "", new { @class = "text-danger" })
+                </div>
+            </div>
+            <div class="form-group col-lg-6">
+                @Html.LabelFor(model => model.TireWear, htmlAttributes: new { @class = "control-label col-md-3 " })
+                <div class="col-md-8">
+                    @Html.TextBoxFor(m => m.TireWear, null, new { type = "number", @required = "required" })
+                    @Html.ValidationMessageFor(model => model.TireWear, "", new { @class = "text-danger" })
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12" style="padding:10px 5px 5px 10px">
+            <div class="form-group col-lg-6">
+                @Html.LabelFor(model => model.Image, htmlAttributes: new { @class = "control-label col-md-3" })
+                <div class="col-md-8">
+                    <input type="file" name="ImageFile" />
+
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-12" style="padding:10px 5px 5px 10px">
+
+            <div class="form-group col-lg-6 pull-right">
+                <input type="reset" value="Reset" class="btn btn-primary btn-block" />
+            </div>
+            <div class="form-group col-lg-6 pull-right">
+
+                <input type="submit" value="Create" class="btn btn-success btn-block " />
+            </div>
+
+
+
+        </div>
+    </div>}
+

@@ -1,0 +1,66 @@
+﻿@model IEnumerable<POC_VehicleRace.Models.Vehicle>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Type)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Break)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TowStrap)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Lift)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Image)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.TireWear)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </th>
+        <th>
+            Action
+        </th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Type)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Break)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TowStrap)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Lift)
+        </td>
+        <td>
+            <img src="/Content/images/@Url.Content(item.Image==null?"car.PNG":item.Image)" alt="Image" height="100px" width="100px" />
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.TireWear)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CreatedDate)
+        </td>
+        <td>
+            <input type="button" class="btn" onclick="RemoveVehicle('@item.Id')" value="Remove" />
+        </td>
+    </tr>
+}
+
+</table>
