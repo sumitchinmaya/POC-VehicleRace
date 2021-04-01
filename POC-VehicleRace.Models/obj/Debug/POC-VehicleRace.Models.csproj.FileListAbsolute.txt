@@ -1,0 +1,7 @@
+E:\Personal\POC-VehicleRace\POC-VehicleRace\POC-VehicleRace.Models\bin\Debug\POC-VehicleRace.Models.dll.config
+E:\Personal\POC-VehicleRace\POC-VehicleRace\POC-VehicleRace.Models\bin\Debug\POC-VehicleRace.Models.dll
+E:\Personal\POC-VehicleRace\POC-VehicleRace\POC-VehicleRace.Models\bin\Debug\POC-VehicleRace.Models.pdb
+E:\Personal\POC-VehicleRace\POC-VehicleRace\POC-VehicleRace.Models\obj\Debug\POC-VehicleRace.Models.csprojAssemblyReference.cache
+E:\Personal\POC-VehicleRace\POC-VehicleRace\POC-VehicleRace.Models\obj\Debug\POC-VehicleRace.Models.csproj.CoreCompileInputs.cache
+E:\Personal\POC-VehicleRace\POC-VehicleRace\POC-VehicleRace.Models\obj\Debug\POC-VehicleRace.Models.dll
+E:\Personal\POC-VehicleRace\POC-VehicleRace\POC-VehicleRace.Models\obj\Debug\POC-VehicleRace.Models.pdb

@@ -1,0 +1,49 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28307.572
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC-VehicleRace", "POC-VehicleRace\POC-VehicleRace.csproj", "{7FB1EB94-566E-478C-9DBF-E7481C29A9C7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC-VehicleRace.Tests", "POC-VehicleRace.Tests\POC-VehicleRace.Tests.csproj", "{57AEACFD-16D7-475B-ABA8-1FD22E7E9068}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC-VehicleRace.Models", "POC-VehicleRace.Models\POC-VehicleRace.Models.csproj", "{F662C42A-D849-4F93-AC3B-D379D017A1BE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC-VehicleRace.Entities", "POC-VehicleRace.Entities\POC-VehicleRace.Entities.csproj", "{17EA88D3-330C-4989-8618-271FBDB2C72D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "POC-VehicleRace.Respositories", "POC-VehicleRace.Respositories\POC-VehicleRace.Respositories.csproj", "{7C79B5E5-72D1-46A6-B821-5B7363445785}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7FB1EB94-566E-478C-9DBF-E7481C29A9C7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7FB1EB94-566E-478C-9DBF-E7481C29A9C7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7FB1EB94-566E-478C-9DBF-E7481C29A9C7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7FB1EB94-566E-478C-9DBF-E7481C29A9C7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{57AEACFD-16D7-475B-ABA8-1FD22E7E9068}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{57AEACFD-16D7-475B-ABA8-1FD22E7E9068}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{57AEACFD-16D7-475B-ABA8-1FD22E7E9068}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{57AEACFD-16D7-475B-ABA8-1FD22E7E9068}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F662C42A-D849-4F93-AC3B-D379D017A1BE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F662C42A-D849-4F93-AC3B-D379D017A1BE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F662C42A-D849-4F93-AC3B-D379D017A1BE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F662C42A-D849-4F93-AC3B-D379D017A1BE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17EA88D3-330C-4989-8618-271FBDB2C72D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17EA88D3-330C-4989-8618-271FBDB2C72D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17EA88D3-330C-4989-8618-271FBDB2C72D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17EA88D3-330C-4989-8618-271FBDB2C72D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C79B5E5-72D1-46A6-B821-5B7363445785}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C79B5E5-72D1-46A6-B821-5B7363445785}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C79B5E5-72D1-46A6-B821-5B7363445785}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C79B5E5-72D1-46A6-B821-5B7363445785}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E2A03BE-BC51-4CC3-8822-C9DB98185720}
+	EndGlobalSection
+EndGlobal
